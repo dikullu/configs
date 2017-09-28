@@ -22,6 +22,14 @@
 ;; highlight matching parantheses
 (show-paren-mode 1)
 
+;; Include parent path in non-unique buffer names
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
+;; Auto Complete mode (AUR: emacs-auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+
 
 
 ;;; FSHARP SETTINGS
@@ -72,9 +80,9 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;;; transparrent background
-(defun on-after-init ()
-  (unless (display-graphic-p (selected-frame))
-    (set-face-background 'default "unspecified-bg" (selected-frame))))
+;;(defun on-after-init ()
+;;  (unless (display-graphic-p (selected-frame))
+;;    (set-face-background 'default "unspecified-bg" (selected-frame))))
 
 (add-hook 'window-setup-hook 'on-after-init)
 
