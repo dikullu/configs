@@ -1,0 +1,60 @@
+
+#URxvt*font:  xft:Terminus:pixelsize=15
+URxvt*font:     xft:mono:medium:size=11
+urxvt*termName:         rxvt
+urxvt*background:       #000000
+urxvt*foreground:       #00ff00
+urxvt*scrollBar:        false
+urxvt*perl-lib:         /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:  default,matcher
+urxvt*urlLauncher:      /opt/mozilla/bin/firefox
+urxvt*matcher.button:   1
+#urxvt*fading:           50
+#urxvt*fadeColor:        #000000
+Xft.hintstyle: hintslight
+
+Xft*dpi:                96
+Xft*antialias:          true
+Xft*hinting:            full
+
+urxvt*background:       rgba:0000/0000/0000/cccc
+
+URxvt.transparent:   true
+URxvt.shading:       30
+#URxvt.tintColor:   20
+ 
+! #########################################
+!
+!    Urxvt Colours
+!
+! Black
+*color0:      #131212
+*color8:      #474747
+! Red 
+*color1:      #472323
+*color9:      #5c2929
+! Green
+*color2:      #299E1B
+*color10:     #77E768
+! Yellow
+*color3:      #96833F
+*color11:     #D0B249
+! Blue
+*color4:      #2467AD
+*color12:     #6B90EE
+! Purple
+*color5:      #655272
+*color13:     #9F75BA
+! Cyan
+*color6:      #92B19E
+*color14:     #A1CDCD
+! White
+*color7:      #FFFFFF
+*color15:     #97927C
+
+! ########################################
+
+# copy / paste with ctrl+shift+c/v
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste_escaped
+!URxvt.keysym.C-A-V: perl:clipboard:paste_escaped
