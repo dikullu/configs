@@ -36,8 +36,8 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # set brightness
-bindsym $mod+F6 exec ~/.backlightdown
-bindsym $mod+F7 exec ~/.backlightup
+bindsym $mod+F6 exec ~/.backlight.sh down
+bindsym $mod+F7 exec ~/.backlight.sh up
 
 # lock
 bindsym $mod+Mod1+l exec lock
